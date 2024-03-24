@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " HR",
+    "SRG",
+    "R  "
+  ],
+  "key": {
+    "G": {
+      "item": "sandsword:goldenrings"
+    },
+    "S": {
+      "item": "sandsword:sandsteel"
+    },
+    "H": {
+      "item": "sandsword:sunshard"
+    },
+    "R": {
+      "item": "sandsword:sandstonerod"
+    }
+  },
+  "result": {
+    "item": "sandsword:dunescepter"
+  }
+}

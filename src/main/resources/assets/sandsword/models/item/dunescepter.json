@@ -1,0 +1,7 @@
+{
+  "parent": "sandsword:custom/dunescepter_model",
+  "textures": {
+    "4": "sandsword:block/dunescepter",
+    "particle": "sandsword:item/dunescepter"
+  }
+}
