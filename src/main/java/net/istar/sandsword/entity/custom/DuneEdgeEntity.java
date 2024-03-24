@@ -58,7 +58,7 @@ public class DuneEdgeEntity extends PersistentProjectileEntity {
         super(ModEntities.DUNEEDGE, owner, world);
         this.duneedgeStack = new ItemStack(ModItems.DUNEEDGE);
         this.dataTracker.set(ENCHANTED, stack.hasGlint());
-        this.stack = stack.copy();
+        this.stack = new ItemStack(ModItems.DUNEEDGE);
         if (stack.hasCustomName()) {
             this.setCustomName(stack.getName());
         }
@@ -172,17 +172,17 @@ public class DuneEdgeEntity extends PersistentProjectileEntity {
     }
     @Override
     protected boolean tryPickup(PlayerEntity player) {
-        return super.tryPickup(player) || this.isNoClip() && this.isOwner(player) && player.getInventory().insertStack(this.asItemStack());
+        return super.tryPickup(player) || this.isNoClip() && this.isOwner(player) && player.getInventory().insertStack(new ItemStack(ModItems.DUNEEDGE));
     }
     @Override
     protected ItemStack asItemStack() {
-        return this.stack.copyWithCount(1);
+        return this.stack != null ? this.stack.copyWithCount(1) : new ItemStack(ModItems.DUNEEDGE); // Provide a default if null
     }
     @Override
     public void tick() {
         super.tick();
         DuneEdgeWhileProjectileFlyingTickProcedure.execute(this.getWorld(), this.getX(), this.getY(), this.getZ());
-        if(this.inGround && Math.random() <= 0.88 && this.inGroundTime == 1) {
+        if(this.inGround && Math.random() <= 0.00 && this.inGroundTime == 1) {
             this.discard();
         }
     }

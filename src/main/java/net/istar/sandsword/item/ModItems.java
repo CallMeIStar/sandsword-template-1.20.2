@@ -47,8 +47,12 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(SandSword.MOD_ID, name), item);
     }
 
+
     public static void registerModItems(){
         SandSword.LOGGER.info("Registering Mod Items for" + SandSword.MOD_ID);
-
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemToIngredientTabItemsGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredient);
     }
 }
