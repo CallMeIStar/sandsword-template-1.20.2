@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "sandsword:block/piatrausv"
+      },
+      {
+        "model": "sandsword:block/piatrausv",
+        "y": 90,
+        "x": 90
+      },
+      {
+        "model": "sandsword:block/piatrausv",
+        "y": 180,
+        "x": 180
+      },
+      {
+        "model": "sandsword:block/piatrausv",
+        "y": 270,
+        "x": 270
+      }
+    ]
+  }
+}

@@ -14,7 +14,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.Vanishable;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
@@ -34,7 +33,7 @@ public class DuneScepterItem extends Item implements Vanishable {
 
     @Override
     public boolean isEnchantable(ItemStack stack) {
-        return super.isEnchantable(stack) && stack.getItem() == this; // Only allow enchanting this item
+        return super.isEnchantable(stack) && stack.getItem() == this;
     }
 
     @Override

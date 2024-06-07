@@ -1,0 +1,69 @@
+{
+	"type": "origins:multiple",
+	"sandfallimmunity": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:from_falling"
+		},
+		"condition": {
+			"type": "origins:block_in_radius",
+			"block_condition": {
+				"type": "origins:in_tag",
+				"tag": "sandsword:sandblock"
+			},
+			"radius": 1
+		}
+	},
+	"saturation": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"condition": {
+			"type": "apoli:in_block",
+			"block_condition": {
+				"type": "apoli:in_tag",
+				"tag": "sandsword:sandblock"
+			}
+		},
+		"entity_action": {
+			"type": "apoli:apply_effect",
+			"effect": {
+				"effect": "saturation",
+				"amplifier": 0,
+				"duration": 1
+			}
+		}
+	},
+	"fire_and_cactus_resistance": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "onFire"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "inFire"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "hotFloor"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "cactus"
+                }
+            ]
+        }
+    },
+	"nosuff":{
+		"type": "apoli:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "inWall"
+		}
+	},
+	"name": "Desert Resilience",
+	"description": "Resistant against fall damage on sand, prevents suffocation, fire (excluding lava damage), and cactus harm. Gain sustenance by standing in sand."
+}

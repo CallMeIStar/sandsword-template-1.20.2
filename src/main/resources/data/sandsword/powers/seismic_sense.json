@@ -1,0 +1,65 @@
+{
+	"name": "Sensory Crystal",
+	"description": "Your seismic sense allows you to sense vibrations from within the sand.",
+	"type": "origins:multiple",
+	"sense": {
+		"type": "origins:entity_glow",
+		"entity_condition": {
+			"type": "origins:and",
+			"conditions":[
+				{
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "aridian:sandblock"
+					}
+				},
+				{
+					"type": "origins:in_block_anywhere",
+					"block_condition": {
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "origins:in_tag",
+								"tag": "aridian:sandblock"
+							}
+						]
+					},
+					"comparison": ">=",
+					"compare_to": 1
+				}
+			]
+		},
+		{
+			"type": "apoli:entity_type",
+			"entity_type": "armor_stand",
+			"inverted": true
+		}
+	]
+},
+		"bientity_condition": {
+			"type": "origins:actor_condition",
+			"condition": {
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:in_tag",
+							"tag": "aridian:sandblock"
+						}
+					]
+				},
+				"comparison": ">=",
+				"compare_to": 1
+			}
+		},
+		"use_teams": false,
+		"red": 0.8,
+		"green": 0.73,
+		"blue": 0.45
+	}
+}

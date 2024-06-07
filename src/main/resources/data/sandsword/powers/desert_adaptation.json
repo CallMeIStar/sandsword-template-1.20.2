@@ -1,0 +1,44 @@
+{
+    "name": "Desert Adaptation",
+    "description": "Your desert acclimatization leaves you exhausted and drains your vitality when outside hot biomes, resulting in the loss of one heart. Additionally, your desert upbringing renders you unable to swim in any environment.",
+    "type": "origins:multiple",
+    "exhaust": {
+        "type": "origins:exhaust",
+        "exhaustion": 2,
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": ">=",
+                "compare_to": 2,
+                "inverted": true
+            }
+        }
+    },
+    "heart": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": -2
+        },
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": ">=",
+                "compare_to": 2,
+                "inverted": true
+            }
+        }
+    },
+    "ignorewater":{
+        "type": "origins:ignore_water",
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    }
+}

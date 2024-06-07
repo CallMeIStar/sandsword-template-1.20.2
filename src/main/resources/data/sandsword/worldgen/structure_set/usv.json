@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "sandsword:usv",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642136474,
+
+    "spacing": 60,
+
+    "separation": 12,
+
+    "type": "minecraft:random_spread"
+  }
+}

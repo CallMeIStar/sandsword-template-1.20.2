@@ -1,0 +1,30 @@
+{
+    "type": "apoli:multiple",
+    "fire_projectile1": {
+        "type": "origins:fire_projectile",
+        "entity_type": "sandsword:duneedge",
+        "hud_render": {
+            "should_render": true
+        },
+        "count": 20,
+        "interval": 1,
+        "divergence": 2,
+        "speed": 4,
+        "start_delay": 1,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "sandsword:dunescepter"
+                }
+            }
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": false
+        }
+    },
+    "name": "dd"
+}

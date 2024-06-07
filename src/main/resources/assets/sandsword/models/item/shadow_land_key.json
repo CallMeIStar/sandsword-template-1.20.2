@@ -1,0 +1,32 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "sandsword:item/shadow_land_key"
+  },
+  "elements": [
+    {
+      "from": [6, 10, 7],
+      "to": [11, 18, 9],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+      "faces": {
+        "north": {"uv": [0, 0, 5, 8], "texture": "#0"},
+        "east": {"uv": [0, 8, 2, 16], "texture": "#0"},
+        "south": {"uv": [5, 0, 10, 8], "texture": "#0"},
+        "west": {"uv": [2, 8, 4, 16], "texture": "#0"},
+        "up": {"uv": [9, 10, 4, 8], "texture": "#0"},
+        "down": {"uv": [14, 8, 9, 10], "texture": "#0"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [180, 0, 0],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, 0, 180],
+      "translation": [0, 3.75, 0],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

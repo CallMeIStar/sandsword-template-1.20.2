@@ -15,11 +15,8 @@ public class BlazeCornettiItem extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         ItemStack itemStack = super.finishUsing(stack, world, user);
         if (!world.isClient) {
-            // ... (Existing teleportation code) ...
 
-            // Set the user on fire after teleportation
-            user.setOnFireFor(5);  // Adjust the duration as needed
-            // Visual and sound effects for fire (optional)
+            user.setOnFireFor(5);
             world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_GENERIC_EXTINGUISH_FIRE, SoundCategory.PLAYERS, 1.0F, 1.0F);
 
         }

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "sandsword:block/blackstonegrass"
+      },
+      {
+        "model": "sandsword:block/blackstonegrass",
+        "y": 90
+      },
+      {
+        "model": "sandsword:block/blackstonegrass",
+        "y": 180
+      },
+      {
+        "model": "sandsword:block/blackstonegrass",
+        "y": 270
+      }
+    ]
+  }
+}

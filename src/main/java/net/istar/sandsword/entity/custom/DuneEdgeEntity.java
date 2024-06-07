@@ -18,12 +18,10 @@ import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
 import net.minecraft.network.packet.s2c.play.GameStateChangeS2CPacket;
-import net.minecraft.registry.tag.EntityTypeTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -182,7 +180,7 @@ public class DuneEdgeEntity extends PersistentProjectileEntity {
     public void tick() {
         super.tick();
         DuneEdgeWhileProjectileFlyingTickProcedure.execute(this.getWorld(), this.getX(), this.getY(), this.getZ());
-        if(this.inGround && Math.random() <= 0.00 && this.inGroundTime == 1) {
+        if(this.inGround && Math.random() <= 0 && this.inGroundTime == 1) {
             this.discard();
         }
     }

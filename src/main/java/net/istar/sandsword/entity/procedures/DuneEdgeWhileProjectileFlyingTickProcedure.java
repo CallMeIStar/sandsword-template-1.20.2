@@ -13,6 +13,6 @@ public class DuneEdgeWhileProjectileFlyingTickProcedure {
         ParticleEffect fallingSand = new BlockStateParticleEffect(ParticleTypes.FALLING_DUST, Blocks.SAND.getDefaultState());
 
         // Summon the particles
-        world.addParticle(fallingSand, x, y, z, 0, 0.1, 0);  // Correct argument order
+        world.addParticle(fallingSand, x, y, z, 0, 1, 0);  // Correct argument order
     }
 }
