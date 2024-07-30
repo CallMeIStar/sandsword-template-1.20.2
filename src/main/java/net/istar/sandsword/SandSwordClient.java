@@ -15,6 +15,6 @@ public class SandSwordClient implements ClientModInitializer
     public void onInitializeClient(){
         EntityRendererRegistry.register(ModEntities.DUNEEDGE, DuneEdgeEntityRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.DUNEEDGE, DuneEdgeEntityModel::getTexturedModelData);
-        new ModBlocksClient().onInitializeClient();
+        ModBlocksClient.onInitializeClient();
     }
 }

@@ -8,7 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 
 public class ModBlocksClient implements ClientModInitializer {
     @Override
-    public void onInitializeClient() {
+    public static void onInitializeClient() {
         ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {
             if (view != null && pos != null) {
                 return BiomeColors.getGrassColor(view, pos);
