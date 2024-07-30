@@ -15,7 +15,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 import static net.istar.sandsword.block.ModBlocks.BLACKSTONEGRASS;
-import static net.istar.sandsword.block.ModBlocks.PIATRAUSV;
 
 public class ModItems {
     public static final Item DUNEESSENCE = registerItem("duneessence", new Item(new FabricItemSettings()));
@@ -26,6 +25,9 @@ public class ModItems {
     public static final Item SANDSTONEROD = registerItem("sandstonerod", new Item(new FabricItemSettings()));
     public static final Item ARBOREALKEY = registerItem("arborealkey", new Item(new FabricItemSettings()));
     public static final Item SHADOWLANDKEY = registerItem("shadow_land_key", new Item(new FabricItemSettings()));
+    public static final Item LEAF = registerItem("leaf", new Item(new FabricItemSettings()));
+    public static final Item NATURESBITE = registerItem("naturesbite", new Item(new FabricItemSettings()));
+    public static final Item BARK = registerItem("bark", new Item(new FabricItemSettings()));
     private static void addItemsToIngredient(FabricItemGroupEntries entries){
 
         entries.add(DUNEESSENCE);
@@ -36,6 +38,8 @@ public class ModItems {
         entries.add(SANDSTONEROD);
         entries.add(SHADOWLANDKEY);
         entries.add(ARBOREALKEY);
+        entries.add(LEAF);
+        entries.add(BARK);
 
     }
     public static final Item DUNEEDGE = registerItem("duneedge", new DuneEdgeItem(new FabricItemSettings()));
@@ -49,10 +53,10 @@ public class ModItems {
     public static final Item BLAZECORNETTI = registerItem("blazecornetti", new BlazeCornettiItem(new FabricItemSettings().food(ModFoodComponents.BLAZECORNETTI)));
     private static void addItemToIngredientTabItemsGroup(FabricItemGroupEntries entries){
         entries.add(BLAZECORNETTI);
+        entries.add(NATURESBITE);
     }
     private static void addItemToBlockTabItemsGroup(FabricItemGroupEntries entries){
         entries.add(BLACKSTONEGRASS);
-        entries.add(PIATRAUSV);
     }
 
     private static Item registerItem(String name, Item item){

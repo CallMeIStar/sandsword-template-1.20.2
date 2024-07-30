@@ -6,7 +6,7 @@
     "biome_source": {
       "type": "minecraft:fixed",
       "seed": 286956243,
-      "biome": "sandsword:restantier"
+      "biome": "sandsword:shadow_land"
     },
     "settings": {
       "name": "sandsword:shadow_land",

@@ -1,15 +1,17 @@
 {
-  "item.sandsword.duneedge": "Sabie de Nisip",
-  "item.sandsword.dunescepter": "Sceptru de Nisip",
+  "item.sandsword.duneedge": "Dune\u0027s Edge",
+  "item.sandsword.dunescepter": "Dune\u0027s Scepter",
   "item.sandsword.blazecornetti": "Blaze Cornetti",
   "item.sandsword.duneessence": "Dune Essence",
   "item.sandsword.sandsteel": "Sandsteel",
   "item.sandsword.sandstonerod": "Sandstone Rod",
-  "item.sandsword.goldenring": "Inel de Aur",
-  "item.sandsword.goldenrings": "Inele de Aur",
+  "item.sandsword.goldenring": "Golden Ring",
+  "item.sandsword.goldenrings": "Golden Rings",
   "item.sandsword.sunshard": "Sunshard",
-  "item.sandsword.arborealkey": "Cheia de integralist",
-  "item.sandsword.shadow_land_key": "Cheia de restantier",
+  "item.sandsword.arborealkey": "Arboreal Key",
+  "item.sandsword.shadow_land_key": "Shadow Land Key",
   "block.sandsword.blackstonegrass": "Blackstone Grass Block",
-  "block.sandsword.piatrausv": "Corp C Block"
+  "item.sandsword.bark": "Bark",
+  "item.sandsword.leaf": "Leaf",
+  "item.sandsword.naturesbite": "Nature\u0027s Bite"
 }

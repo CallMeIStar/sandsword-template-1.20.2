@@ -1,7 +1,6 @@
 package net.istar.sandsword;
 
 import net.fabricmc.api.ModInitializer;
-import net.istar.sandsword.block.ModBlocks;
 import net.istar.sandsword.entity.ModEntities;
 import net.istar.sandsword.item.ModItems;
 import net.istar.sandsword.loottablemodify.ModLootTableModifier;
@@ -20,7 +19,6 @@ public class SandSword implements ModInitializer {
 		ModItems.registerModItems();
 		ModEntities.registerModEntities();
 		ModLootTableModifier.modifyLootTables();
-		ModBlocks.registerModBlocks();
 
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(Blocks.MUD_BRICKS)
