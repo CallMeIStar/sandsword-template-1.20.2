@@ -40,6 +40,7 @@ dependencies {
 	include 'net.kyrptonaught:customportalapi:0.0.1-beta64.5-1.20.2'
 }
 
+
 processResources {
 	inputs.property "version", project.version
 

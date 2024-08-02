@@ -24,4 +24,7 @@ public class ModBlocks {
         return Registry.register(Registries.ITEM, new Identifier(SandSword.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
+    public static void registerModBlocks(){
+        SandSword.LOGGER.info("Registering Mod Blocks for" + SandSword.MOD_ID);
+    }
 }
